@@ -31,4 +31,10 @@ class HelloController extends Controller
 
         return ExitCode::OK;
     }
+
+    public function actionTest()
+    {
+        $params = ['lang____id'];
+        var_dump(!empty($params['lang_id']));
+    }
 }

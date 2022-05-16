@@ -1,5 +1,8 @@
 <?php
 
+use app\components\LangRequest;
+use app\components\LangUrlManager;
+
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
@@ -15,12 +18,24 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'i18n' => [
+            'translations' => [
+                'app*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages',
+                    'sourceLanguage' => 'en',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                    ],
+                ],
+            ],
+        ],
         'formatter' => [
             'locale' => 'ru-RU',
             'defaultTimeZone' => 'Europe/Moscow',
         ],
         'request' => [
-            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'class' => LangRequest::class,
             'cookieValidationKey' => 'QsGnRsbfs-79keyjpM8G31uBFDknyqOO',
         ],
         'cache' => [
@@ -53,6 +68,7 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'class' => LangUrlManager::class,
             'rules' => [
             ],
         ],

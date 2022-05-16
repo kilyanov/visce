@@ -64,6 +64,7 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+        <?php echo Yii::t('app', 'welcome'); ?>
         <?= $content ?>
     </div>
 </main>
