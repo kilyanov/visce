@@ -22,7 +22,7 @@ class m220516_181738_create_lang_table extends Migration
             'createdAt' => $this->dateTime()->null(),
             'updatedAt' => $this->dateTime()->null(),
         ]);
-        $this->batchInsert('lang', ['url', 'local', 'name', 'default', 'createdAt', 'updatedAt'], [
+        $this->batchInsert($this->table, ['url', 'local', 'name', 'default', 'createdAt', 'updatedAt'], [
             ['en', 'en-EN', 'English', 0, date('Y-m-d H:i:s'), date('Y-m-d H:i:s')],
             ['ru', 'ru-RU', 'Русский', 1, date('Y-m-d H:i:s'), date('Y-m-d H:i:s')],
         ]);
