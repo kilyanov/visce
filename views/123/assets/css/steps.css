@@ -1,0 +1,17 @@
+.stackWrapper{
+    color: #C0A88C !important;
+    padding: 5rem;
+}
+
+
+@media (max-width: 768px) {
+    .stackWrapper  img{
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .stackWrapper{
+        padding: 0;
+        padding-top: 2rem;
+    }
+}

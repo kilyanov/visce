@@ -1,0 +1,88 @@
+body{
+  /* height: 1000vh !important; */
+}
+.header_top { 
+  height: 64px;    
+  background-color: white;
+  position: fixed;
+  z-index: 50;
+  top: 0; left: 0;
+  width: 100%;
+  transition: all .3s ease;
+  -webkit-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.openSideBarWrapper{
+  float: left;
+  padding: 12px 10px 0;
+}
+
+#openSideBar img{
+  height: inherit !important;
+}
+
+.contact{
+  float: right;
+}
+
+
+.header_top.out {
+  transform: translateY(-100%);
+}
+
+.mobilePhoneContact a{
+  text-decoration: none;
+  color: black;
+}
+
+.mobilePhoneContact a:visited{
+  color: black;
+}
+
+.mobilePhoneContact a:active{
+  color: black;
+}
+
+.contact a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact a:visited{
+  color: black;
+}
+
+.contact a:active{
+  color: black;
+}
+
+.wrap img{
+  width: 30px;
+}
+.wrap{
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.visib {opacity: 1; position: absolute; transition: opacity 500ms; right: 0;}
+.invis {opacity: 0; transition: opacity 500ms;}
+
+.wrap:hover .visib {
+  opacity:0;
+  transition:opacity 500ms;
+}
+
+.wrap:hover .invis {
+  opacity: 1;
+  transition: opacity 500ms;
+}

@@ -50,10 +50,22 @@ $config = [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'viewPath' => '@app/mail',
+            'htmlLayout' => 'layouts/mail-html',
+            'textLayout' => 'layouts/mail-text',
+            'messageConfig' => [
+                'charset' => 'UTF-8',
+                'from' => ['info@onyxgrp.ru' => 'onyxgrp.ru'],
+            ],
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'mail.hostland.ru',
+                'username' => 'noreplay@onyxgrp.ru',
+                'password' => 'rbkmzyjdFC1900',
+                'port' => '25',
+                'encryption' => '',
+            ]
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -70,6 +82,15 @@ $config = [
             'showScriptName' => false,
             'class' => LangUrlManager::class,
             'rules' => [
+                'order' => 'site/order',
+                'services' => 'site/services'
+            ],
+        ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\bootstrap5\BootstrapAsset' => [
+                    'js' => ['js/bootstrap.js'],
+                ],
             ],
         ],
     ],
