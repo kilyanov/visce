@@ -83,7 +83,11 @@ $config = [
             'class' => LangUrlManager::class,
             'rules' => [
                 'order' => 'site/order',
-                'services' => 'site/services'
+                'order-service' => 'site/order-service',
+                'services' => 'site/services',
+                'cookie' => 'site/cookie',
+                'privacy' => 'site/privacy',
+                'steps' => 'site/steps',
             ],
         ],
         'assetManager' => [

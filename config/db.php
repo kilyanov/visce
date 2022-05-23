@@ -3,8 +3,8 @@
 return [
     'class' => 'yii\db\Connection',
     'dsn' => 'mysql:host=localhost;dbname=visce',
-    'username' => 'root',
-    'password' => '1901',
+    'username' => 'admin', //admin root
+    'password' => 'admin', //admin 1901
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)

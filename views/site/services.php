@@ -135,15 +135,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
     <div class="container">
         <div class="row fs-4 text-uppercase" align="center" style="color: #666666;">
             <div class="col-md p-3 pt-4 p-md-5">
-                единое информационное пространство для всех сотрудников компании
+                <?= Yii::t('app', 'a single information space for all employees of the company'); ?>
             </div>
             <div class="col-md p-3 pt-4 p-md-5 bordered">
                 <div>
-                    четкая картина дел без затрат времени на подготовку отчетов
+                    <?= Yii::t('app', 'a clear picture of the cases without spending time on preparing reports'); ?>
                 </div>
             </div>
             <div class="col-md p-3 pt-4 p-md-5">
-                базы данных лучше защищены от потерь информации
+                <?= Yii::t('app', 'databases are better protected from information loss'); ?>
             </div>
         </div>
     </div>
@@ -154,16 +154,16 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/cloud.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/cloud.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="cloud">Облачнные решения</div>
+                    <div class="fs-4 text-center text-uppercase" id="cloud"><?= Yii::t('app', 'Cloud solutions')?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        Разработка облачного программного обеспечения — это превосходное решение для компании, которой необходимо приложение или программа с расширенными пользовательскими настройками, хорошей масштабируемостью и легкой интегрирацией с сервером.
-                        Вы можете хранить данные и программы в облачном хранилище, работая с ними в онлайн режиме и не нагружая жесткие диски своего компьютера.
+                        <?= Yii::t('app', 'Cloud software development is an excellent solution for a company that needs an application or program with advanced user settings, good scalability and easy integration with the server.'); ?>
+                        <?= Yii::t('app', 'You can store data and programs in cloud storage, working with them online and without loading your computer\'s hard drives.'); ?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Облачнные решения">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Cloud solutions'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -177,22 +177,26 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 
             <div class="d-flex align-items-center justify-self-center p-5">
                 <div class="text-center">
-                    Работайте с текстом, таблицами и презентациями совместно с коллегами
+                    <?= Yii::t('app', 'Work with text, tables and presentations together with colleagues'); ?>
                 </div>
             </div>
 
             <div class="d-flex orderBox align-items-center">
                 <div class="included">
-                    <div class="text-center">разрешайте и запрещайте просмотр и редактирование файлов любому пользователю</div>
-                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка и внедрение CRM/ERP/HRM систем">
-                        Заказать
+                    <div class="text-center">
+                        <?= Yii::t('app', 'allow and prohibit viewing and editing files to any user'); ?>
+                        </div>
+                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Development and implementation of CRM/ERP/HRM systems'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
 
             <div class="d-flex align-items-center imgGrid">
-                <div class="text-center p-2">Просматривать документы, изображения и видео можно прямо в браузере, не скачивая</div>
-                <img src="./assets/media/img/services/cloud2.webp" style="width: 50%; height: 100%; object-fit: cover;">
+                <div class="text-center p-2">
+                    <?= Yii::t('app', 'You can view documents, images and videos directly in the browser without downloading'); ?>
+                </div>
+                <img src="/media/img/services/cloud2.webp" style="width: 50%; height: 100%; object-fit: cover;">
             </div>
 
         </div>
@@ -204,15 +208,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/mobile.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/mobile.webp" class="p-2" alt="" style='width: inherit;'>
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="mobile">Разработка мобильных приложений</div>
+                    <div class="fs-4 text-center text-uppercase" id="mobile"><?= Yii::t('app', 'Mobile application development'); ?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        Мы предлагаем создание приложений для iOS и Android в соответствии с техническим заданием или видением заказчика. При консультации с нашими менеджерами, Вам станет понятно, нужно ли Вам мобильное приложение и какое конкретно необходимо. Обращаясь к нам на ранней стадии, мы поможем Вам спроектировать бизнес-модель и стратегию поэтапного развития проекта. Важное место в нашей работе занимает аналитика: анализ требований и бизнес-процессов, маркетинговый и технический аудит, управление требованиями на всех этапах проекта.
+                        <?= Yii::t('app', 'We offer the creation of applications for iOS and Android in accordance with the technical task or vision of the customer. In consultation with our managers, it will become clear to you whether you need a mobile application and which one is specifically needed. By contacting us at an early stage, we will help you design a business model and a strategy for the phased development of the project. Analytics occupies an important place in our work: analysis of requirements and business processes, marketing and technical audit, requirements management at all stages of the project.'); ?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка мобильных приложений">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Mobile application development'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -224,15 +228,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
     <div class="container">
         <div class="row fs-4 text-uppercase" align="center" style="color: #666666;">
             <div class="col-md p-3 pt-4 p-md-5">
-                Автоматизация бизнеса
+                <?= Yii::t('app', 'Business automation'); ?>
             </div>
             <div class="col-md p-3 pt-4 p-md-5 bordered">
                 <div>
-                    Увеличение прибыли
+                    <?= Yii::t('app', 'Increase in profits') ;?>
                 </div>
             </div>
             <div class="col-md p-3 pt-4 p-md-5">
-                Статус компании
+                <?= Yii::t('app', 'Company status') ;?>
             </div>
         </div>
     </div>
@@ -243,15 +247,17 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/watch.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/watch.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="smartWatch">Умные часы</div>
+                    <div class="fs-4 text-center text-uppercase" id="smartWatch">
+                        <?= Yii::t('app', 'Smart watches') ;?>
+                    </div>
                     <p align="justify" class="fs-5 mt-4">
-                        Современные смарт-часы не ограничиваются тем, что измеряют пульс владельца и количество пройденных им шагов. Эти устройства могут выступать в роли «виртуального тренера» и помогать пользователям поддерживать себя в форме, даже не посещая спортзал. На основе данных о физической активности приложение может рекомендовать индивидуальную программу тренировок. Также совеременные часы помогают не только следить за здоровьем, но и следить за ежедневными задачами, помогают в таких вещах как оплата покупок со встроенным NFC и многое другое. Наша команда готова создать любое приложение под  устройства IOS и Android для того, чтобы расширить функционал часов и упростить жизнь владельцу
+                        <?= Yii::t('app', 'Modern smart watches are not limited to measuring the owner\'s pulse and the number of steps he has taken. These devices can act as a "virtual trainer" and help users keep fit without even going to the gym. Based on the data on physical activity, the application can recommend an individual training program. Also, modern watches help not only to monitor health, but also to monitor daily tasks, help with things like paying for purchases with built-in NFC and much more. Our team is ready to create any application for iOS and Android devices in order to expand the functionality of the watch and simplify the life of the owner') ;?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Умные часы">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Smart watches') ;?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -265,22 +271,22 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 
             <div class="d-flex align-items-center justify-self-center p-5">
                 <div class="text-center">
-                    Удобное получение уведомлений при синхронизации с телефоном
+                    <?= Yii::t('app', 'Convenient receipt of notifications when syncing with your phone'); ?>
                 </div>
             </div>
 
             <div class="d-flex orderBox align-items-center">
                 <div class="included">
-                    <div class="text-center">Автономный мониторинг состояния здоровья</div>
-                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Умные часы">
-                        Заказать
+                    <div class="text-center"><?= Yii::t('app', 'Autonomous health monitoring'); ?></div>
+                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Smart watches') ;?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
 
             <div class="d-flex align-items-center imgGrid">
-                <div class="text-center p-2">Управление плеером, камерой, диктофоном и другими компонентами</div>
-                <img src="./assets/media/img/services/watch2.webp" style="width: 50%; height: 100%; object-fit: cover;">
+                <div class="text-center p-2">У<?= Yii::t('app', 'Control of the player, camera, voice recorder and other components'); ?></div>
+                <img src="/media/img/services/watch2.webp" style="width: 50%; height: 100%; object-fit: cover;">
             </div>
 
         </div>
@@ -292,16 +298,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/api.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/api.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase">Итеграция API</div>
+                    <div class="fs-4 text-center text-uppercase"><?= Yii::t('app', 'API Integration'); ?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        С помощью API (интерфейса программирования) крупных сервисов их можно интегрировать с любым веб-ресурсом, что приводит к значительному расширению функциональна и возможностей сайта. Все это направлено на упрощение взаимодействия между сайтом и его ЦА, повышения эффективности бизнес-процессов. Также мы предло
-                        гаем другие решения по повышению доходности вашего ресурса. Для этого свяжитесь с нами при помощи контактных телефонов или онлайн-формы.
+                        <?= Yii::t('app', 'Using the API (programming interface) of large services, they can be integrated with any web resource, which leads to a significant expansion of the functionality and capabilities of the site. All this is aimed at simplifying the interaction between the site and its target audience, increasing the efficiency of business processes. We also offer other solutions to increase the profitability of your resource. To do this, contact us using the contact phone numbers or the online form.');?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Итеграция API">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'API Integration'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -313,15 +318,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
     <div class="container">
         <div class="row fs-4 text-uppercase" align="center" style="color: #666666;">
             <div class="col-md p-3 pt-4 p-md-5">
-                Оптимизация работы с клиентской базой
+                <?= Yii::t('app', 'Optimization of work with the client base');?>
             </div>
             <div class="col-md p-3 pt-4 p-md-5 bordered">
                 <div>
-                    Создание списков рассылок и управление ими
+                    <?= Yii::t('app', 'Creating and managing mailing lists');?>
                 </div>
             </div>
             <div class="col-md p-3 pt-4 p-md-5">
-                Общее повышение эффективности работы ресурса
+                <?= Yii::t('app', 'Overall increase in the efficiency of the resource');?>
             </div>
         </div>
     </div>
@@ -332,15 +337,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/ai.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/ai.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="gatewaysAPI">Разработка шлюзов</div>
+                    <div class="fs-4 text-center text-uppercase" id="gatewaysAPI"><?= Yii::t('app', 'Gateway Development');?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        Шлюз API находится между клиентами и службами. Он выполняет функцию обратного прокси, передавая запросы от клиентов к службам. Он также может выполнять такие специализированные задачи, как аутентификация, завершение SSL-запросов и ограничение частоты. Если этот шлюз не будет развернут, клиенты должны будут отправлять запросы непосредственно к внешним службам. Но при предоставлении клиентам непосредственного доступа к службам могут возникнуть некоторые проблемы.
+                        <?= Yii::t('app', 'The API gateway is located between clients and services. It performs the function of a reverse proxy, passing requests from clients to services. It can also perform specialized tasks such as authentication, completion of SSL requests, and frequency limiting. If this gateway is not deployed, clients will have to send requests directly to external services. However, there may be some problems when providing clients with direct access to services.'); ?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка шлюзов">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Gateway Development');?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -352,24 +357,22 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 <section class="grided grided_4 mt-5 mb-5 wow fadeIn">
     <div class="container text-uppercase fs-4">
         <div class="wrapper">
-
             <div class="d-flex align-items-center imgGrid">
-                <div class="text-center p-2">Просматривать документы, изображения и видео можно прямо в браузере, не скачивая</div>
-                <img src="./assets/media/img/services/ai2.webp" style="width: 50%; height: 100%; object-fit: cover;">
+                <div class="text-center p-2"><?= Yii::t('app', 'You can view documents, images and videos directly in the browser without downloading');?></div>
+                <img src="/media/img/services/ai2.webp" style="width: 50%; height: 100%; object-fit: cover;">
             </div>
-
             <div class="d-flex orderBox align-items-center">
                 <div class="included">
-                    <div class="text-center">разрешайте и запрещайте просмотр и редактирование файлов любому пользователю</div>
-                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка шлюзов">
-                        Заказать
+                    <div class="text-center"><?= Yii::t('app', 'allow and prohibit viewing and editing files to any user'); ?></div>
+                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Gateway Development');?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
 
             <div class="d-flex align-items-center justify-self-center p-5">
                 <div class="text-center">
-                    Работайте с текстом, таблицами и презентациями совместно с коллегами
+                    <?= Yii::t('app', 'Work with text, tables and presentations together with colleagues'); ?>
                 </div>
             </div>
 
@@ -384,18 +387,18 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/aintel.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/aintel.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="artificialIntel">Искусственный интеллект</div>
+                    <div class="fs-4 text-center text-uppercase" id="artificialIntel"><?= Yii::t('app', 'Artificial intelligence'); ?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        Искусственный интеллект – это научные знания и технология создания интеллектуальных машин, программ, сервисов, приложений и др. ИИ дает технике возможность выполнять функции, которые считаются прерогативой человека.
+                        <?= Yii::t('app', 'Artificial intelligence is scientific knowledge and technology for creating intelligent machines, programs, services, applications, etc. AI gives technology the ability to perform functions that are considered the prerogative of a person.'); ?>
                     </p>
                     <p align="justify" class="fs-5 mt-4">
-                        Создание искусственного интеллекта призвано оптимизировать деятельность компании, открыть ранее недоступные горизонты, сократить расходы, создать конкурентное преимущество и дать людям заниматься творческой деятельностью, а не рутиной.
+                        <?= Yii::t('app', 'The creation of artificial intelligence is designed to optimize the company\'s activities, open previously inaccessible horizons, reduce costs, create a competitive advantage and allow people to engage in creative activities rather than routine.'); ?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Искусственный интеллект">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Artificial intelligence'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -408,15 +411,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
     <div class="container">
         <div class="row fs-4 text-uppercase" align="center" style="color: #666666;">
             <div class="col-md p-3 pt-4 p-md-5">
-                Прогнозирование поведение конкурентов и общую ситуацию на рынке.
+                <?= Yii::t('app', 'Forecasting the behavior of competitors and the general situation on the market.');?>
             </div>
             <div class="col-md p-3 pt-4 p-md-5 bordered">
                 <div>
-                    Быстрая  аналитика  поступающих данных и моментальное реагирование
+                    <?= Yii::t('app', 'Fast analytics of incoming data and instant response');?>
                 </div>
             </div>
             <div class="col-md p-3 pt-4 p-md-5">
-                Создание алгоритмов для предотвращения финансовых потерь
+                <?= Yii::t('app', 'Creating algorithms to prevent financial losses');?>
             </div>
         </div>
     </div>
@@ -427,15 +430,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/saas.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/saas.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="saas">Разработка персонализированных Saas проектов</div>
+                    <div class="fs-4 text-center text-uppercase" id="saas"><?= Yii::t('app', 'Development of personalized Saas projects'); ?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        SaaS концепция – бизнес-модель использования программного обеспечения, при котором заказчику предоставляется удобный WEB-интерфейс и полный доступ к приложению через интернет. Таким образом, представляется новейшая бизнес-модель взаимоотношений между покупателем и разработчиком ПО. Отличительная особенность программного обеспечения этого вида – размещение на сервере поставщика ПО основного «ядра» программной части. Отсюда следуют все преимущества SaaS:
+                        <?= Yii::t('app', 'The SaaS concept is a business model for using software, in which the customer is provided with a convenient WEB interface and full access to the application via the Internet. Thus, the newest business model of the relationship between the buyer and the software developer is presented. A distinctive feature of this type of software is the placement of the main "core" of the software part on the server of the software provider. Hence all the advantages of SaaS:'); ?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка персонализированных Saas проектов">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Development of personalized Saas projects'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -448,15 +451,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
     <div class="container text-uppercase fs-4">
         <div class="wrapper">
             <div class="d-flex align-items-center imgGrid">
-                <div class="text-center p-2">Гибкое проектирование под любые базы данных.</div>
-                <img src="./assets/media/img/services/saas2.webp" style="width: 50%; height: 100%; object-fit: cover;">
+                <div class="text-center p-2"><?= Yii::t('app', 'Flexible design for any database.');?></div>
+                <img src="/media/img/services/saas2.webp" style="width: 50%; height: 100%; object-fit: cover;">
             </div>
 
             <div class="d-flex orderBox align-items-center">
                 <div class="included">
-                    <div class="text-center">Является надежным решением для хранения данных.</div>
-                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка персонализированных Saas проектов">
-                        Заказать
+                    <div class="text-center"><?= Yii::t('app', 'It is a reliable solution for data storage.'); ?></div>
+                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Р<?= Yii::t('app', 'Development of personalized Saas projects'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
 
@@ -464,7 +467,7 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 
             <div class="d-flex align-items-center justify-content-center p-5">
                 <div class="text-center">
-                    Легкая работа с файлами, которые хранятся на сервере владельца сервиса
+                    <?= Yii::t('app', 'Easy work with files that are stored on the server of the service owner'); ?>
                 </div>
             </div>
 
@@ -477,16 +480,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/support.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/support.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="support">Техническая поддержка</div>
+                    <div class="fs-4 text-center text-uppercase" id="support"><?= Yii::t('app', 'Technical support'); ?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        Visce предлагает услуги технической поддержки, предназначенные для комплексного решения задач поддержки и обслуживания, а также развития ИТ-инфраструктуры бизнеса.
-                        Широкий спектр услуг сервисной поддержки, опыт сопровождения систем клиентов и ресурсы Visce обеспечивают заказчикам гарантии эффективной поддержки
+                        <?= Yii::t('app', 'Vice offers technical support services designed for the integrated solution of support and maintenance tasks, as well as the development of business IT infrastructure. A wide range of service support services, customer system maintenance experience and Visce resources provide customers with guarantees of effective support'); ?>
                     </p>
-                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Техническая поддержка">
-                        Заказать
+                    <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Technical support'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -499,15 +501,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
     <div class="container">
         <div class="row fs-4 text-uppercase" align="center" style="color: #666666;">
             <div class="col-md p-3 pt-4 p-md-5">
-                Наличие собственного контакт центра, который работает в режиме 24х7
+                <?= Yii::t('app', 'The presence of its own contact center, which operates in 24x7 mode'); ?>
             </div>
             <div class="col-md p-3 pt-4 p-md-5 bordered">
                 <div>
-                    Гарантии высокого уровня обслуживания информационных систем в соответствии с  соглашением  обслуживания SLA
+                    <?= Yii::t('app', 'Guarantees of a high level of maintenance of information systems in accordance with the SLA service agreement'); ?>
                 </div>
             </div>
             <div class="col-md p-3 pt-4 p-md-5">
-                Минимизация бизнес-рисков за счет сокращения времени простоя и сбоев системы
+                <?= Yii::t('app', 'Minimizing business risks by reducing downtime and system failures'); ?>
             </div>
         </div>
     </div>
@@ -518,15 +520,15 @@ $this->title = Yii::t('app', 'Vice - International IT company');
         <section class="halfed">
             <div class="row p-3">
                 <div class="col-md align-self-center">
-                    <img src="./assets/media/img/services/web.webp" class="p-2" alt="" style='width: inherit;'>
+                    <img src="/media/img/services/web.webp" class="p-2" alt="" style="width: inherit;">
                 </div>
                 <div class="col-md p-3 text-center">
-                    <div class="fs-4 text-center text-uppercase" id="webDevelop">Разработка сайтов</div>
+                    <div class="fs-4 text-center text-uppercase" id="webDevelop"><?= Yii::t('app', 'Websites development'); ?></div>
                     <p align="justify" class="fs-5 mt-4">
-                        Каждый наш интернет-проект – это рентабельный рабочий ресурс, который приносит прибыль и полностью оправдывает затраты, вложенные в него. Виртуальное представительство вашей компании разрабатывается индивидуально в зависимости от целей и задач бизнеса. Наши специалисты тщательно продумывают пользовательские сценарии, интерфейс и предлагают оптимальные технические и дизайнерские решения.
+                        <?= Yii::t('app', 'Each of our Internet projects is a cost–effective working resource that makes a profit and fully justifies the costs invested in it. The virtual representation of your company is developed individually depending on the goals and objectives of the business. Our specialists carefully think over user scenarios, interface and offer optimal technical and design solutions.'); ?>
                     </p>
                     <button class="orderButton mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка сайтов">
-                        Заказать
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
@@ -541,22 +543,24 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 
             <div class="d-flex align-items-center justify-self-center p-5">
                 <div class="text-center">
-                    Веб-сайт – это место, где можно опубликовать подробную информацию о компании
+                    <?= Yii::t('app', 'A website is a place where you can publish detailed information about a company'); ?>
                 </div>
             </div>
 
             <div class="d-flex orderBox align-items-center">
                 <div class="included">
-                    <div class="text-center">это инструмент, с помощью которого можно привлечь потенциальных клиентов</div>
-                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="Разработка сайтов">
-                        Заказать
+                    <div class="text-center">
+                        <?= Yii::t('app', 'this is a tool with which you can attract potential customers'); ?>
+                    </div>
+                    <button class="orderButton" data-bs-toggle="modal" data-bs-target="#exampleModal" data-nametitle="<?= Yii::t('app', 'Websites development'); ?>">
+                        <?= Yii::t('app', 'To order'); ?>
                     </button>
                 </div>
             </div>
 
             <div class="d-flex align-items-center imgGrid">
-                <div class="text-center p-2">Наличие веб-сайта свидетельствует о технической продвинутости компании и соответствии требованиям времени</div>
-                <img src="./assets/media/img/services/web2.webp" style="width: 50%; height: 100%; object-fit: cover;">
+                <div class="text-center p-2"><?= Yii::t('app', 'The presence of a website indicates the technical advancement of the company and compliance with the requirements of the time'); ?></div>
+                <img src="/media/img/services/web2.webp" style="width: 50%; height: 100%; object-fit: cover;">
             </div>
 
         </div>
@@ -566,48 +570,47 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 <section class="smartCollection pb-5 wow fadeIn" id='smartCollection' style="margin-top: 100px;">
     <div class="container" style="font-weight: 100;">
         <div class="text-center p-0 p-md-5 pt-5">
-            <img src="./assets/media/img/services/smartColLogo.svg" alt="" width="150">
+            <img src="/media/img/services/smartColLogo.svg" alt="" width="150">
             <div class="ui section-title fs-5 p-5" >
                 <div class="ui huge header center aligned" style="color: white; font-weight: 100;">SMART COLLECTION</div>
             </div>
             <p class="text-center fs-5" style="font-weight: 100;">
-                Smart Collection - специальная CRM система, разработанная с целью решения задачи технологического обеспечения операционного процесса подразделений, работающих с проблемными активами. Система призвана обеспечивать оптимизацию работы подразделений компании.
+                <?= Yii::t('app', 'Smart Collection is a special CRM system designed to solve the problem of technological support of the operational process of departments working with distressed assets. The system is designed to optimize the work of the company\'s divisions.'); ?>
             </p>
         </div>
         <div class="splide cover mb-5">
             <div class="splide__track">
                 <ul class="splide__list text-center">
-                    <li class="splide__slide "><img src="./assets/media/img/services/smartCollection.webp" alt=""></li>
-                    <li class="splide__slide"><img src="./assets/media/img/services/smart2.webp" alt=""></li>
+                    <li class="splide__slide "><img src="/media/img/services/smartCollection.webp" alt=""></li>
+                    <li class="splide__slide"><img src="/media/img/services/smart2.webp" alt=""></li>
                 </ul>
             </div>
         </div>
         <div class="row p-4">
-            <div class="col-md-4 text-center"><img src="./assets/media/img/services/ipad.webp" alt="" style="width: 40%;"></div>
+            <div class="col-md-4 text-center"><img src="/media/img/services/ipad.webp" alt="" style="width: 40%;"></div>
             <div class="col-md-8 fs-4 text-center align-self-center">
-                Масштабируемая архитектура программного обеспечения позволяет легко расширить число рабочих мест и количество одновременно работающих пользователей.
+               <?= Yii::t('app', 'The scalable software architecture makes it easy to expand the number of jobs and the number of concurrent users.');?>
             </div>
         </div>
         <div class="row p-4">
-            <div class="col-md-4 text-center"><img src="./assets/media/img/services/router.webp" alt="" style="width: 40%;"></div>
+            <div class="col-md-4 text-center"><img src="/media/img/services/router.webp" alt="" style="width: 40%;"></div>
             <div class="col-md-8 fs-4 text-center align-self-center">
-                Доступ пользователей к системе определяется на уровне ролей, при этом любые активные действия операторов в системе фиксируются в автономном журнале действий.
+                <?= Yii::t('app', 'User access to the system is determined at the role level, while any active actions of operators in the system are recorded in the offline action log.'); ?>
             </div>
         </div>
         <div class="row p-4">
-            <div class="col-md-4 text-center"><img src="./assets/media/img/services/termostat.webp" alt="" style="width: 40%;"></div>
+            <div class="col-md-4 text-center"><img src="/media/img/services/termostat.webp" alt="" style="width: 40%;"></div>
             <div class="col-md-8 fs-4 text-center align-self-center">
-                Встроенный back-office позволяет формировать потоки работы и обеспечивает расстановку приоритетов.
+                <?= Yii::t('app', 'The built-in back-office allows you to form work flows and provides prioritization.'); ?>
             </div>
         </div>
 
-        <div class="fs-4 text-center" style="margin-top: 7rem;">Дополнительные возможности системы: <br/>
-            Мобильное приложение для выездной группы, с возможностью фиксирования видео  и фото отчета, передачи онлайн в центральную платформу «Smart Collection»
-            Фиксирование геолокации коллекторов.
-        </div>
+        <div class="fs-4 text-center" style="margin-top: 7rem;"><?= Yii::t('app', 'Additional features of the system:')?> <br/>
+            <?= Yii::t('app', 'Mobile application for the visiting group, with the ability to record video and photo reports, transfer online to the central platform "Smart Collection" Fixing the geolocation of collectors.'); ?>
+       </div>
 
         <div class="fs-4 text-center mt-5">
-            <a href="https://Smart-collection.ru/">Smart-collection.ru</a><br/>
+            <a href="https://smart-collection.ru/">smart-collection.ru</a><br/>
             <a href="tel:+7(926)-881-87-10">+7(926)-881-87-10</a>
         </div>
 

@@ -232,7 +232,7 @@ $('a[href*="#"]')
         let data = new FormData(form[0]);
 
         $.ajax({
-            url: '/order',
+            url: '/order-service',
             type: 'post',
             data: data,
             contentType: false,

@@ -31,6 +31,34 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+
+<!-- MODAL -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+            <div class="text-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="text-center p-2">
+                <img class="justify-self-center" src="/media/Visce.svg" alt=""  width="150">
+            </div>
+            <div class="ui form modal-body text-center">
+                <form action="" id="orderService" method="post">
+                    <input type="hidden" value="1" name="modal_form">
+                    <input id="hide1" type="hidden" value="" name="OrderServiceForm[service_name]">
+                    <input type="text" placeholder="<?= Yii::t('app', 'Name');?>" name="OrderServiceForm[name]" required/>
+                    <input type="text" class="mt-3" name="OrderServiceForm[phone]" placeholder="<?= Yii::t('app', 'Phone');?>" required/>
+                    <button class="ui secondary basic brown big button mt-3" type="submit"><?= Yii::t('app', 'Send');?></button>
+                    <div class="fs-5 mt-3 text-start">
+                        <?= Yii::t('app', 'Leave your contact details and we will contact you soon to discuss cooperation.');?>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL -->
+
 <!-- SIDEBAR START -->
 <div class="ui sidebar vertical menu borderless fs-2">
     <div class="p-3 text-end" id="closeSidebar">
@@ -358,7 +386,7 @@ AppAsset::register($this);
 
         <div class="container">
             <div class="footerLogo text-end p-3">
-                <img src="./assets/media/VisceLight.svg" alt="" width="130">
+                <img src="/media/VisceLight.svg" alt="" width="130">
             </div>
             <div class="pb-2 row fs-6 contactFooter" style="position: relative;">
                 <div class="col p-0 pl-md-2 pb-0 d-md-flex align-items-end" style="margin-left: 148;">
@@ -372,7 +400,6 @@ AppAsset::register($this);
                     <?= date('Y') ?> Visce
                 </div>
                 <div class="col align-self-end">
-
                 </div>
             </div>
         </div>
