@@ -57,9 +57,9 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Оценка проекта</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Project evaluation');?></div>
                     <span class="advantage_desc">
-				      	   	Собранные данные анализируются, и на их основе создается модель продукта, которая одинаково понятна как заказчику, так и разработчику. Далее рассчитываются предварительные временные и производительные затраты, необходимые для создания продукта. Оптимальный вариант – презентация, в которой подробно описана оценка проекта, возможные риски, команда для работы над проектом, различные варианты реализации задач, условия, этапность и другие детали.
+				      	   	<?= Yii::t('app', 'The collected data is analyzed, and a product model is created based on it, which is equally understandable to both the customer and the developer. Next, the preliminary time and production costs necessary to create a product are calculated. The best option is a presentation that describes in detail the evaluation of the project, possible risks, the team to work on the project, various options for the implementation of tasks, conditions, stages and other details.'); ?>
 						</span>
                 </div>
             </div>
@@ -73,13 +73,13 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Проектирование</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Designing'); ?></div>
                     <span class="advantage_desc">
-		      	   	   		Когда все вопросы по предварительной оценке улажены, наступает этап проектирования, включающий:
+		      	   	   		<?= Yii::t('app', 'When all the issues of the preliminary assessment are settled, the design stage begins, including:') ?>
 		      	   	   		<ul>
-		      	   	   			<li>Разработка карты проекта с указанием опорных точек для сверки результатов</li>
-		      	   	   			<li>Проектирование архитектуры</li>
-		      	   	   			<li>Выбор технологического стека – инструментов разработки, которые включают языки программирования, фреймворки, системы управления базами данных, компиляторы и т. д.</li>
+		      	   	   			<li><?= Yii::t('app', 'Development of a project map with reference points for reconciliation of results');?></li>
+		      	   	   			<li><?= Yii::t('app', 'Architecture design');?></li>
+		      	   	   			<li><?= Yii::t('app', 'Choosing a technology stack – development tools that include programming languages, frameworks, database management systems, compilers, etc.');?></li>
 		      	   	   		</ul>
 						</span>
                 </div>
@@ -95,14 +95,14 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Дизайн</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Design'); ?></div>
                     <span class="advantage_desc">
-	      	   	   		  	После того как завершена аналитика, проект оценен и согласован, разработчики могут переходить к дизайну. Этот этап включает два блока:
-	      	   	   		  	<ul>
-	      	   	   		  		<li>Разработку UX – дизайн пользовательского интерфейса. UX отвечает за логику построения элементов системы, адаптивность и юзабилити продукта. </li>
-	      	   	   		  		<li>Разработку UI – отрисовку элементов интерфейса: блоки, кнопки, иконки, которые собираются в готовый макет.</li>
-	      	   	   		  	</ul>
-	      	   	   		  	Многие ошибочно полагают, что дизайн – это только о визуальной части. На самом деле дизайн отвечает за формирование пользовательского опыта.
+	      	   	   		  	<?= Yii::t('app', 'After the analysis is completed, the project is evaluated and agreed, the developers can proceed to the design. This stage includes two blocks:
+<ul>
+<li>Development of UX – user interface design. UX is responsible for the logic of building system elements, adaptability and usability of the product. </li>
+<li>UI development – rendering of interface elements: blocks, buttons, icons that are assembled into a ready-made layout.</li>
+</ul>
+Many people mistakenly believe that design is only about the visual part. In fact, design is responsible for shaping the user experience.') ?>
 						</span>
                 </div>
             </div>
@@ -117,10 +117,10 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Разработка</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Development') ?></div>
                     <span class="advantage_desc">
-      	   	   		  	   	Этот этап подразумевает реализацию идей заказчика уже оформленных в практические шаги. Идеальный формат – разработка спринтами. Команда Visce в соответствии с картой проекта проводит работу и показывает заказчику результат каждой части. Разработка в формате спринтов удобна и эффективна, т.к. позволяет максимально быстро собирать обратную связь, реагировать на изменения и вносить правки. Такой подход строится на основе гибкой методологии и называется итеративным.
-						</span>
+      	   	   		  	    <?= Yii::t('app', 'This stage implies the implementation of the customer\'s ideas already formulated in practical steps. The ideal format is development by sprints. The Visce team, in accordance with the project map, carries out the work and shows the customer the result of each part. Development in the sprint format is convenient and effective, because it allows you to collect feedback as quickly as possible, respond to changes and make edits. This approach is based on a flexible methodology and is called iterative.'); ?>
+                    </span>
                 </div>
             </div>
         </div>
@@ -134,10 +134,10 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Тестирование</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Testing');?></div>
                     <span class="advantage_desc">
-  	   	   		  	   	   	Тестирование программного продукта – один из важнейших этапов в процессе его разработки, ведь до презентации нового продукта потребителям компания должна быть полностью уверена в его работоспособности. Поэтому так важно вовремя выявить критические баги, проверить функционал продукта, провести полноценный анализ и реализовать рекомендации по улучшению.
-							Для этого QA-инженеры могут использовать различные способы и методы тестирования нового IT-продукта: модульные, интеграционные, функциональные, приемочные.
+  	   	   		  	   	   	<?= Yii::t('app', 'Testing of a software product is one of the most important stages in the process of its development, because before the presentation of a new product to consumers, the company must be fully confident in its operability. Therefore, it is so important to identify critical bugs in time, check the functionality of the product, conduct a full analysis and implement recommendations for improvement.
+To do this, QA engineers can use various methods and methods of testing a new IT product: modular, integration, functional, acceptance.');?>
 						</span>
                 </div>
             </div>
@@ -152,10 +152,10 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Запуск</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Launch');?></div>
                     <span class="advantage_desc">
-   	   		  	   	   	   	После того, как тестирование проведено и баги устранены, предстоит запуск готового продукта. Если раньше продукт был доступен только узкому кругу разработчиков и специалистов по контролю качества, то теперь предстоит встреча с реальными пользователями. На этом этапе также настраиваются инструменты мониторинга, помогающие изучить поведение пользователей и доработать продукт, если потребуется.
-						</span>
+                        <?= Yii::t('app', 'After the testing is done and the bugs are fixed, the finished product will be launched. If earlier the product was available only to a narrow circle of developers and quality control specialists, now we have to meet with real users. At this stage, monitoring tools are also configured to help study user behavior and refine the product, if necessary.');?>
+                    </span>
                 </div>
             </div>
         </div>
@@ -169,10 +169,10 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Передача прав</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Transfer of rights');?></div>
                     <span class="advantage_desc">
-   		  	   	   	   	   	Запуск произведен – разработчики выполнили свою часть работы и передают готовый продукт владельцу. На этом этапе контроль над программной частью и документацией полностью переходит заказчику. Детальные условия передачи прав прописываются в договоре о сотрудничестве между заказчиком и компанией-разработчиком.
-						</span>
+   		  	   	   	    <?= Yii::t('app', 'The launch has been made – the developers have done their part and are handing over the finished product to the owner. At this stage, control over the software and documentation is completely transferred to the customer. Detailed conditions for the transfer of rights are prescribed in the cooperation agreement between the customer and the developer company.'); ?>
+                    </span>
                 </div>
             </div>
         </div>
@@ -186,10 +186,10 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Техническая поддержка</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Technical support');?></div>
                     <span class="advantage_desc">
-		  	   	   	   	   	После завершения работ продукт нуждается в дальнейшей техподдержке. На этом этапе разработчик предлагает временное или постоянное сопровождение, чтобы после запуска новой системы снизить риски сбоев и обеспечить быстрое восстановление в случае неполадок. Временное обслуживание предполагает устранение возможных недочетов в течение ограниченного периода. Постоянная техподдержка удобна, если необходимо регулярно получать последние обновления ПО. В этом случае возможные сбои должны ликвидироваться быстро и незаметно для пользователей.
-						</span>
+		  	   	   	    <?= Yii::t('app', 'After completion of the work, the product needs further technical support. At this stage, the developer offers temporary or permanent support in order to reduce the risks of failures after the launch of the new system and ensure quick recovery in case of malfunctions. Temporary maintenance involves the elimination of possible defects for a limited period. Constant technical support is convenient if you need to regularly receive the latest software updates. In this case, possible failures should be eliminated quickly and unnoticeably for users.'); ?>
+                    </span>
                 </div>
             </div>
         </div>
@@ -203,10 +203,10 @@ $this->title = Yii::t('app', 'Vice - International IT company');
                     </svg>
                 </div>
                 <div class="twelve wide right floated column">
-                    <div class="ui large header">Заключение</div>
+                    <div class="ui large header"><?= Yii::t('app', 'Conclusion');?></div>
                     <span class="advantage_desc">
-	  	   	   	   	   	  	Работа с командой разработчиков должна быть удобной и эффективной, поэтому к выбору IT-партнера нужно подходить со всей ответственностью. Еще на этапе пресейла можно определить, насколько разработчик вам подходит, как он заботится клиенте, насколько специалисты его команды  компетентны и как быстро команда реагирует  на ваши пожелания.
-						</span>
+	  	   	   	   	    <?= Yii::t('app', 'Working with the development team should be convenient and efficient, so you need to approach the choice of an IT partner with full responsibility. Even at the presale stage, you can determine how well the developer suits you, how he cares about the client, how competent his team\'s specialists are and how quickly the team responds to your wishes.');?>
+                    </span>
                 </div>
             </div>
         </div>
@@ -217,26 +217,26 @@ $this->title = Yii::t('app', 'Vice - International IT company');
 
 <section class="stack wow fadeIn">
     <div class="container text-uppercase">
-        <div class="fs-1 text-center wow fadeIn">Наш технологический стек</div>
+        <div class="fs-1 text-center wow fadeIn"><?= Yii::t('app', 'Our technology stack')?></div>
 
         <div class="stackWrapper text-center wow fadeIn">
             <div class="fs-1 text-uppercase p-4">FRONTEND/BACKEND</div>
-            <img src="./assets/media/img/steps/frontback.webp" alt="">
+            <img src="/media/img/steps/frontback.webp" alt="">
         </div>
 
         <div class="stackWrapper text-center wow fadeIn">
             <div class="fs-1 text-uppercase p-4">Mobile</div>
-            <img src="./assets/media/img/steps/mobile.webp" alt="">
+            <img src="/media/img/steps/mobile.webp" alt="">
         </div>
 
         <div class="stackWrapper text-center wow fadeIn">
             <div class="fs-1 text-uppercase p-4">DESKTOP</div>
-            <img src="./assets/media/img/steps/desktop.webp" alt="">
+            <img src="/media/img/steps/desktop.webp" alt="">
         </div>
 
         <div class="stackWrapper text-center wow fadeIns">
             <div class="fs-1 text-uppercase p-4">OS, Servers & Virtualization</div>
-            <img src="./assets/media/img/steps/os.webp" alt="">
+            <img src="/media/img/steps/os.webp" alt="">
         </div>
 
     </div>

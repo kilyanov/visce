@@ -10,7 +10,13 @@ use yii\web\Request;
 
 class LangRequest extends Request
 {
+    public ?string $web = '';
     private ?string $_lang_url = null;
+
+    public function getBaseUrl()
+    {
+        return str_replace($this->web, "", parent::getBaseUrl());
+    }
 
     /**
      * @throws InvalidConfigException

@@ -22,8 +22,16 @@ class SiteController extends Controller
         ];
     }
 
+    public function beforeAction($action): bool
+    {
+
+        return parent::beforeAction($action);
+    }
+
     public function actionIndex(): string
     {
+        Yii::$app->language = (strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2)) == 'ru')
+            ? 'ru-RU' : 'en-US';
         return $this->render('index');
     }
 
