@@ -30,8 +30,10 @@ class SiteController extends Controller
 
     public function actionIndex(): string
     {
-        Yii::$app->language = (strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2)) == 'ru')
-            ? 'ru-RU' : 'en-US';
+        if (Yii::$app->language !== 'en-EN') {
+            Yii::$app->language = (strtolower(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2)) == 'ru')
+                ? 'ru-RU' : 'en-US';
+        }
         return $this->render('index');
     }
 

@@ -10,6 +10,7 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -207,10 +208,28 @@ AppAsset::register($this);
                 </div>
             </a>
             <?= Html::img('/media/sep.svg', ['class' => 'p-3 p-xl-4 pt-0 pb-0 pt-xl-0 pb-xl-0', 'alt' => '']);?>
-            <div class="wrap align-middle">
-                <?= Html::img('/media/earth.svg', ['class' => 'visib', 'alt' => '']);?>
-                <?= Html::img('/media/darkEarth.svg', ['class' => 'invis', 'alt' => '']);?>
-            </div>
+            <?php
+            if (Yii::$app->language === 'ru-RU') {
+               $link = '/en';
+            }
+            else {
+                $link = '/ru';
+            }
+            ?>
+            <a href="<?= $link?>">
+                <div class="wrap align-middle">
+                    <?= Html::img('/media/earth.svg', ['class' => 'visib', 'alt' => '']);?>
+                    <?= Html::img('/media/darkEarth.svg', ['class' => 'invis', 'alt' => '']);?>
+                </div>
+            </a>
+            <?php
+            if (Yii::$app->language === 'ru-RU') {
+                Yii::$app->language = 'en-US';
+            }
+            else {
+                Yii::$app->language = 'ru-RU';
+            }
+            ?>
         </div>
     </nav>
 
